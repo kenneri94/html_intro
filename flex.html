@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Flex</title>
+
+ <style>
+.main-1{
+ border: 1px solid #070202;
+ padding: 10px;
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ display: none;
+}
+
+.smaller{
+ border: 1px solid #f00100;
+ height:100px;
+ /* width: 40%; */
+}
+
+.x{
+width:60%;
+}
+
+.y{
+ width:30%;
+}
+
+.container{
+ display: flex;
+ justify-content: space-between;
+
+}
+
+.s{
+ width: 23%;
+  border: 1px solid #000;
+}
+ </style>
+</head>
+<body>
+ 
+ <div class="main-1">
+  <div class="smaller x">A</div>
+  <div class="smaller y">B</div>
+ </div>
+
+ <div class="container">
+  <div class="s"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laboriosam laborum amet quae velit quod consequatur, sed pariatur! Quae, labore.</p></div>
+  <div class="s"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ad reprehenderit quia corporis excepturi ducimus!</p></div>
+  <div class="s"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos corporis ea eos sit dolorem.</p></div>
+  <div class="s"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, impedit sit. Aliquam!</p></div>
+ </div>
+
+</body>
+</html>

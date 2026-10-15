@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Form</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  background-color: #f0f0f0;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+form{
+  width:50%;
+  border: 1px solid #171617;
+  padding: 16px;
+  margin: auto;
+}
+
+label{
+  color:#D98327;
+}
+
+.full_width{
+  width:100%;
+  padding:10px; 
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: #086288;
+  border-radius: 8px;
+  font-size: medium;
+  color: #171617;
+  font-weight: 500;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+
+select{
+  margin-top: 16px;
+}
+</style>
+
+</head>
+<body>
+ <form>
+  <label for="names">Names</label>
+<input type="text" name="full_name" class="full_width" placeholder="jane doe" id="names" required>
+
+<label for="email">Email</label>
+<input type="email" name="email" class="full_width" placeholder="janedoe@gmail.com" id="email" required>
+
+<label for="pass">Password</label>
+<input type="password" name="password" class="full_width" placeholder="*****" id="pass" required>
+
+<label for="weight">Weight</label>
+<input type="number" name="weight" class="full_width" step="0.01" min="30" max="250" placeholder="Weigth in Kgs" id="weight" required>
+
+<label for="dob">Date of birth</label>
+<input type="date" name="dob" class="full_width" id="dob" min="1940-01-01" max="2008-12-31" required>
+
+<label>Select your gender</label>
+<br>
+<input type="radio" name="gender" id="m">
+<label for="m">Female</label>
+<br>
+
+<input type="radio" name="gender" id="f">
+<label for="f">Male</label>
+<br>
+
+<label >Select your dish</label>
+<br>
+<input type="checkbox" name="food" id="x">
+<label for="f">Pizza</label>
+<br>
+
+<input type="checkbox" name="food" id="y">
+<label for="y">Burger</label>
+
+<br>
+<input type="checkbox" name="food" id="z">
+<label for="z">Ugali</label>
+
+
+<select class="full_width">
+  <option>Select the county</option>
+ <option value="1">Mombasa</option>
+ <option value="2">Nairobi</option>
+ <option value="3">Kisii</option>
+ <option value="4">Kisumu</option>
+ <option value="5">Eldoret</option>
+</select>
+
+<button>Register</button>
+ </form>
+</body>
+</html>
